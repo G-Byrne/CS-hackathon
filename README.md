@@ -20,7 +20,9 @@
     // calculate time elapsed since open
     // set tab color to a particular shade based on age using the style api
 
+// event listener for on activated tab
 
+// content script for displaying the message to the user
 // we want to send google notifications for tab birthdays
 
 https://developer.chrome.com/docs/extensions/mv3/user_interface/#popup

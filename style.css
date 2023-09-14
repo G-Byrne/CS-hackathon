@@ -1,0 +1,16 @@
+body {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  font-size: large;
+  background-image: url("background.avif");
+  border-radius: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#sample {
+  
+}
