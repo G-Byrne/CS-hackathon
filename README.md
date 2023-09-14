@@ -6,13 +6,20 @@
 
 // event listener for tabs closing
   // remove the closed tab's data from the storage
+  chrome.tabs.onRemoved.addListener(
+    // store the tab id of the tab that was closed
+    // get the tabs array from storage
+    // iterate through the tabs array until we find a match of the tabid
+      // delete that element from the array
+    // set the tabs storage object to the new array
+  )
 
-// potentially on a time schedule
-  // iterate through each object in the google storage
-  // calculate time elapsed since open
-  // set tab color to a particular shade based on age
+// when a new window is opened, a setTimeout loop is started
+  // get the tabs array from storage
+  // iterate through each object in tabs
+    // calculate time elapsed since open
+    // set tab color to a particular shade based on age using the style api
 
-// change the color of the tab based on the age of the tab
 
 // we want to send google notifications for tab birthdays
 
