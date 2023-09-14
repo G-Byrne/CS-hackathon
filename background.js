@@ -15,8 +15,10 @@ chrome.tabs.onCreated.addListener((tab) => {
     
   })
   .then(() => {
-    chrome.storage.local.set({tabs: tabs});
-    console.log(tabs); // [{id: now}]
+    chrome.storage.local.set({tabs: tabs});// [{id: now}]
+
+    console.log(tabs);
+
   })
   
 })
@@ -60,7 +62,7 @@ chrome.tabs.onRemoved.addListener( (tabid, tabObj) => {
 // use the setTimeout function to console.log() every n milliseconds
 // make sure the callback passed to setTimeout calls setTimeout again
 chrome.windows.onCreated.addListener(() => {
-  // chrome.storage.local.clear();
+  //chrome.storage.local.clear();
   const wait = 3000;
   const timeCheck = function() {
     // set variable to store Date Object now
@@ -87,7 +89,6 @@ chrome.windows.onCreated.addListener(() => {
   timeCheck();
     
 })
-
 
 // chrome.storage.local.set(tabs: [{tabid: date}])
 // const tabs = chrome.storage.local.get(['tabs'])
